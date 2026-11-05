@@ -12,12 +12,12 @@ const statusContent = {
   },
   approved: {
     title: 'Seu acesso está liberado',
-    description: 'Seu registro profissional foi aprovado. Esta área será seu ponto de partida para acompanhar sua prática na GlyCare Pro.',
+    description: 'Seu registro profissional foi aprovado. Esta área será seu ponto de partida para acompanhar sua prática na Glico.',
     color: 'green',
   },
   rejected: {
     title: 'Cadastro não aprovado',
-    description: 'Não foi possível aprovar seus dados profissionais. Entre em contato com a equipe GlyCare Pro para entender os próximos passos.',
+    description: 'Não foi possível aprovar seus dados profissionais. Entre em contato com a equipe Glico para entender os próximos passos.',
     color: 'red',
   },
 }
@@ -184,7 +184,7 @@ export default function Painel() {
   return (
     <main className="dashboard-shell">
       <header className="topbar">
-        <a className="topbar-brand" href="/painel" aria-label="GlyCare Pro, painel"><span className="brand-mark brand-mark-small">g</span><span>GlyCare Pro <i>profissional</i></span></a>
+        <a className="topbar-brand" href="/painel" aria-label="Glico, painel"><span className="brand-mark brand-mark-small">g</span><span>Glico <i>profissional</i></span></a>
         <button className="button button-destructive" type="button" onClick={handleSignOut} disabled={signingOut}>
           <span className="logout-icon" aria-hidden="true">↗</span>{signingOut ? 'Saindo...' : 'Sair'}
         </button>
@@ -194,7 +194,7 @@ export default function Painel() {
         <header className="page-heading dashboard-heading">
           <span className="section-label">ÁREA PROFISSIONAL</span>
           <h1>Seu espaço de cuidado.</h1>
-          <p>Olá{profile?.full_name ? `, ${profile.full_name.split(' ')[0]}` : ''}. Aqui começa sua experiência GlyCare Pro.</p>
+          <p>Olá{profile?.full_name ? `, ${profile.full_name.split(' ')[0]}` : ''}. Aqui começa sua experiência Glico.</p>
         </header>
 
         {loading ? (

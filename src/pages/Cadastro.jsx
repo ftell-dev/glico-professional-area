@@ -92,9 +92,9 @@ export default function Cadastro() {
 
   return (
     <main className="auth-layout auth-layout-register">
-      <section className="auth-brand" aria-label="GlyCare Pro">
-        <Link className="brand-mark" to="/login" aria-label="GlyCare Pro, início"><span>g</span></Link>
-        <p className="eyebrow">GLYCARE PRO <span>·</span> ÁREA PROFISSIONAL</p>
+      <section className="auth-brand" aria-label="Glico">
+        <Link className="brand-mark" to="/login" aria-label="Glico, início"><span>g</span></Link>
+        <p className="eyebrow">GLICO <span>·</span> ÁREA PROFISSIONAL</p>
         <h1>Uma equipe inteira, em sintonia com cada jornada.</h1>
         <p className="brand-copy">Cadastre-se para acompanhar seus pacientes com uma visão mais conectada do cuidado.</p>
         <div className="brand-rule"><span /></div>

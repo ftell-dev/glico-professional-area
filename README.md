@@ -1,4 +1,4 @@
-# GlyCare Pro | Área profissional
+# Glico | Área profissional
 
 Painel profissional em React + Vite para cadastro e autenticação de profissionais de saúde, com acompanhamento de pacientes, curva glicêmica, registros alimentares e orientações de medicamentos no Supabase.
 

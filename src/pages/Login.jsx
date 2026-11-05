@@ -35,9 +35,9 @@ export default function Login() {
 
   return (
     <main className="auth-layout">
-      <section className="auth-brand" aria-label="GlyCare Pro">
-        <Link className="brand-mark" to="/login" aria-label="GlyCare Pro, início"><span>g</span></Link>
-        <p className="eyebrow">GLYCARE PRO <span>·</span> ÁREA PROFISSIONAL</p>
+      <section className="auth-brand" aria-label="Glico">
+        <Link className="brand-mark" to="/login" aria-label="Glico, início"><span>g</span></Link>
+        <p className="eyebrow">GLICO <span>·</span> ÁREA PROFISSIONAL</p>
         <h1>Cuidado conectado começa com quem cuida.</h1>
         <p className="brand-copy">Um espaço dedicado aos profissionais que acompanham a jornada de cada pessoa.</p>
         <div className="brand-rule"><span /></div>
@@ -49,7 +49,7 @@ export default function Login() {
           <header className="page-heading">
             <span className="section-label">BEM-VINDO DE VOLTA</span>
             <h2>Entrar na sua conta</h2>
-            <p>Acesse seu espaço profissional GlyCare Pro.</p>
+            <p>Acesse seu espaço profissional Glico.</p>
           </header>
 
           {!configured && <ConfigurationNotice />}
