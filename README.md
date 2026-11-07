@@ -7,10 +7,11 @@ Painel profissional em React + Vite para cadastro e autenticação de profission
 1. Instale as dependências com `npm install`.
 2. Copie `.env.example` para `.env` e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` do projeto Supabase.
 3. Execute `supabase/schema.sql` no SQL Editor do Supabase.
-4. Em Authentication > URL Configuration, configure a URL local `http://localhost:5173` e o redirecionamento de confirmação de e-mail para `http://localhost:5173/painel`.
-5. Inicie com `npm run dev`.
+4. Em Authentication > Providers, habilite Phone e configure um provedor de SMS. Ative a confirmação de telefone; sem ela, o cadastro não exige o código SMS.
+5. Em Authentication > URL Configuration, configure a URL local `http://localhost:5173` como Site URL e permita o redirecionamento de confirmação de e-mail para `http://localhost:5173/painel`.
+6. Inicie com `npm run dev`.
 
-O cadastro requer confirmação de e-mail se essa opção estiver habilitada no Supabase. Todos os perfis começam como `pending`; um administrador aprova ou recusa o registro pelo SQL Editor. Após a aprovação, o profissional pode cadastrar pacientes e registrar medições de glicemia, sua relação com refeições, observações da dieta e orientações de medicamentos. A curva e a tabela mostram os últimos 15 dias ou um dia selecionado.
+O cadastro exige a confirmação do telefone por SMS antes de associar o e-mail à conta. Se a confirmação de e-mail estiver habilitada no Supabase, também será necessário confirmar o e-mail para entrar com ele. O profissional informa o registro da sua categoria (CRM para médicos, com a UF correspondente). Todos os perfis começam como `pending`; um administrador aprova ou recusa o registro pelo SQL Editor. Após a aprovação, o profissional pode cadastrar pacientes e registrar medições de glicemia, sua relação com refeições, observações da dieta e orientações de medicamentos. A curva e a tabela mostram os últimos 15 dias ou um dia selecionado.
 
 ## Segurança e escopo
 

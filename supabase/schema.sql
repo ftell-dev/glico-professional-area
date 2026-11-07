@@ -74,6 +74,8 @@ begin
     or coalesce(metadata ->> 'terms_accepted', 'false') <> 'true'
     or nullif(trim(metadata ->> 'full_name'), '') is null
     or nullif(trim(metadata ->> 'registration_number'), '') is null
+    or new.phone is null
+    or new.phone !~ '^\+[1-9][0-9]{7,14}$'
     or coalesce(metadata ->> 'registration_state', '') not in (
       'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS',
       'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'
@@ -92,7 +94,7 @@ begin
     expected_registration_type,
     trim(metadata ->> 'registration_number'),
     metadata ->> 'registration_state',
-    nullif(trim(metadata ->> 'phone'), ''),
+    new.phone,
     'pending'
   );
 
